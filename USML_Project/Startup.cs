@@ -47,13 +47,9 @@ namespace USML_Project
             services.AddSingleton<List<Question>>();
             services.AddAuthentication().AddFacebook(options =>
             {
-                options.AppId = "802556947348813";
-                options.AppSecret = "acfff619537940da322204fa2f0aacdf";
             });
             services.AddAuthentication().AddGoogle(options =>
             {
-                options.ClientId = "19465555213-ko3habdfdihjsq3gtgl8g7umcufftmag.apps.googleusercontent.com";
-                options.ClientSecret = "WG-sDv1XTBqYmfMzD-b6216v";
             });
         }
 
