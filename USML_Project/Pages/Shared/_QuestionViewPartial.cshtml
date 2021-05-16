@@ -1,0 +1,35 @@
+﻿
+
+<div class="container">
+    <form method="post">
+        @{
+            <div id="@Model.Id.ToString()" class="question font-weight-bold">
+                <p id="questionText" class="mt-5 text-sm-left" onmousedown='return false;' onselectstart='return false;'>@Model.QuestionText</p>
+                <hr />
+            </div>
+
+            <br />
+
+            foreach (var answer in Model.Answers)
+            {
+                <div class="row">
+                    <input id=@answer.Id.ToString() type="radio" name="answer" value=@answer.Id hidden />
+                    <label name=@answer.Id.ToString() class="btn btn-sm btn-group col-12 text-left font-weight-bold" for=@answer.Id.ToString()>@answer.AnswerText</label>
+                </div>
+            }
+
+            <hr />
+            <br />
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-between">
+                    <li id="previous" class="page-item"><a class="page-link" asp-page-handler="next" asp-page="Exam">წინა</a></li>
+
+                    <li class="page-item"><input id="submit" type="submit" value="პასუხის დადასტურება" class="btn btn-success" disabled /></li>
+
+                    <li id="next" class="page-item"><a class="page-link" asp-page-handler="next" asp-page="Exam">შემდეგი</a></li>
+                </ul>
+            </nav>
+        }
+    </form>
+</div>

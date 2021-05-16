@@ -1,0 +1,34 @@
+﻿.shadow {
+    position: relative;
+    animation-name: moving;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-family: "BPG Arial Caps", sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
+
+@keyframes moving {
+    from {
+        margin:0em;
+        opacity: 0;
+    }
+
+    to {
+        margin: 100em;
+        opacity: 0.9;
+    }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    width: 4em;
+}

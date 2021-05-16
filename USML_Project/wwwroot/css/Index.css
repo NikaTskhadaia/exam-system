@@ -1,0 +1,59 @@
+﻿.mainpage {
+}
+
+.undraw {
+    margin: auto;
+    width: 60%;
+    margin-top:5rem;
+    height: 60vh;
+}
+
+.exambtn {
+    margin: auto;
+    width: 50%;
+}
+
+.examinator {
+    letter-spacing: 0.2rem;
+    padding: 2rem 1rem 2rem 1rem;
+    transition: 0.5s; /* Animation */
+    text-decoration: none !important;
+    background-color: #261e20;
+}
+
+.examinator:hover {
+    background-color: #e43c5c;
+}
+
+
+.card-list{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    padding:5vw;
+    margin-top: 10vh;
+    width:100%;
+    height:70vh;
+    background-color: rgb(156 154 154);
+    color: aliceblue;
+    overflow:scroll;
+}
+
+.my-card{
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    height:350px;
+    width:400px;
+    min-width:250px;
+    padding:1.5rem;
+    border-radius:16px;
+    background-color: rgb(21 20 20);
+    box-shadow: -1rem 0 3rem rgb(72 70 70);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.my-card:hover{
+    transform:translateY(-1rem);
+}

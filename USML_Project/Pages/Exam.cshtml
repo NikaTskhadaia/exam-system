@@ -1,0 +1,25 @@
+﻿@page
+@model USML_Project.Pages.ExamModel
+@{
+    ViewData["Title"] = "გამოცდა";
+}
+
+<br />
+
+<div id="questionlist">
+</div>
+<div class="timer font-weight-bolder m-1 d-flex flex-sm-column justify-content-between">
+    <span id="time" class="rounded p-1 m-2 bg-white border text-center"> </span>
+    <button class="finish-exam btn-danger p-1 m-2 rounded-lg" type="submit" asp-page="/Statistics">დასრულება</button>
+</div>
+
+
+<div id="main" class="shadow-lg bg-light border border-primary rounded-lg">
+    <partial name="_QuestionViewPartial" model="@Model.QuestionModel" />
+</div>
+
+
+@section Scripts {
+
+    <script src="~/js/JavaScript.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,179 @@
+﻿@page
+@model TestProject.Pages.CreateTestModel
+@{
+    ViewData["Title"] = "ტესტის შექმნა";
+}
+
+
+
+
+<form method="post">
+    <div class="shadow m-4 p-3 rounded bg-dark">
+
+        <div id="title">
+            <h4>საგანი</h4>
+        </div>
+
+        <hr />
+
+        <div id="subjectlist" class="row">
+
+            <div class="col-sm-1 col-md-6">
+                <input id="cardiology" type="checkbox" name="Subjects" value="კარდიოლოგია" />
+                <label for="cardiology">კარდიოლოგია (269)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="pulmonology" type="checkbox" name="Subjects" value="პულმონოლოგია" />
+                <label for="pulmonology">პულმონოლოგია (137)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="gastroentero" type="checkbox" name="Subjects" value="გასტროენტეროლოგია" />
+                <label for="gastroentero">გასტროენტეროლოგია (215)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="neprology" type="checkbox" name="Subjects" value="ნეფროლოგია" />
+                <label for="neprology">ნეფროლოგია (147)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="hematology" type="checkbox" name="Subjects" value="ჰემატოლოგია" />
+                <label for="hematology">ჰემატოლოგია (135)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="endocrino" type="checkbox" name="Subjects" value="ენდოკრინოლოგია" />
+                <label for="endocrino">ენდოკრინოლოგია (127)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="rheumatology" type="checkbox" name="Subjects" value="რევმატოლოგია" />
+                <label for="rheumatology">რევმატოლოგია (83)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="imunoAlergo" type="checkbox" name="Subjects" value="იმუნოლოგია-ალერგოლოგია" />
+                <label for="imunoAlergo">იმუნოლოგია-ალერგოლოგია (44)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="pediatry" type="checkbox" name="Subjects" value="პედიატრია" />
+                <label for="pediatry">პედიატრია (479)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="surgery" type="checkbox" name="Subjects" value="ქირურგია" />
+                <label for="surgery">ქირურგია (262)</label>
+            </div>
+
+            <div class="col-sm-1 col-md-6">
+                <input id="meanoGineco" type="checkbox" name="Subjects" value="მეანობა-გინეკოლოგია" />
+                <label for="meanoGineco">მეანობა-გინეკოლოგია (711)</label>
+            </div>
+        </div>
+
+        <br />
+
+        <div id="title">
+            <h4>თემები</h4>
+        </div>
+
+        <hr />
+
+        <div id="topiclist" class="row">
+            <div class="col-3">
+                <input id="cardiology" type="checkbox" name="cardiology" value="cardiology" disabled />
+                <label for="">თემა 1</label>
+            </div>
+
+            <div class="col-3">
+                <input id="pulmonology" type="checkbox" name="pulmonology" value="pulmonology" disabled />
+                <label for="">თემა 2</label>
+            </div>
+
+            <div class="col-3">
+                <input id="gastroentero" type="checkbox" name="gastroentero" value="gastroentero" disabled />
+                <label for="">თემა 3</label>
+            </div>
+
+            <div class="col-3">
+                <input id="neprology" type="checkbox" name="neprology" value="neprology" disabled />
+                <label for="">თემა 4</label>
+            </div>
+
+            <div class="col-3">
+                <input id="hematology" type="checkbox" name="hematology" value="hematology" disabled />
+                <label for="">თემა 5</label>
+            </div>
+
+            <div class="col-3">
+                <input id="endocrino" type="checkbox" name="endocrino" value="endocrino" disabled />
+                <label for="">თემა 6</label>
+            </div>
+
+            <div class="col-3">
+                <input id="rheumatology" type="checkbox" name="rheumatology " value="rheumatology " disabled />
+                <label for=" ">თემა 7</label>
+            </div>
+
+            <div class="col-3">
+                <input id="imunoAlergo" type="checkbox" name="imunoAlergo" value="imunoAlergo" disabled />
+                <label for="">თემა 8</label>
+            </div>
+
+            <div class="col-3">
+                <input id="pediatry" type="checkbox" name="pediatry" value="pediatry" disabled />
+                <label for="">თემა 9</label>
+            </div>
+
+            <div class="col-3">
+                <input id="surgery" type="checkbox" name="surgery" value="surgery" disabled />
+                <label for="">თემა 10</label>
+            </div>
+
+            <div class="col-3">
+                <input id="meanoGineco" type="checkbox" name="meanoGineco" value="meanoGineco" disabled />
+                <label for="">თემა 11</label>
+            </div>
+        </div>
+
+        <br />
+
+
+        <div id="questionQuantity" class="mt-3 mb-5">
+            <h6>კითხვების რაოდენობა</h6>
+            <input name="questionQuantity" type="number" class="text-md-left">
+        </div>
+
+
+        <h6>პარამეტრები</h6>
+
+        <hr />
+        <div class="ml-2">
+
+                <input type="checkbox" id="TimeLimit" name="TimeLimit" asp-for="TimeLimit">
+                <label for="TimeLimit">დროის ლიმიტი</label>
+
+                <br />
+
+                <input type="checkbox" id="ShowCorrectAnswer" name="ShowCorrectAnswer" asp-for="ShowCorrectAnswer">
+                <label for="ShowCorrectAnswer">სწორი პასუხების ჩვენება</label>
+
+                <br />
+
+                <input type="checkbox" id="Unused" name="Unused" asp-for="Unused" disabled>
+                <label for="Unused">პასუხგაუცემელი კითხვები</label>
+        </div>
+
+
+        <input id="createBtn" type="submit" value="გამოცდის დაწყება" class="btn btn-lg btn-outline-light mt-5" disabled />
+
+    </div>
+
+</form>
+
+@section Scripts{
+    <script src="~/js/createTest.js" asp-append-version="true"></script>
+}
